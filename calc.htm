@@ -19,7 +19,7 @@ body {
     <li> <a href="index.html"> About Me </a><li>
     <li> <a href="hardware.html"> Hardware </a><li>
     <li> <a href="how to.html"> How To </a><li>
-    <li> <a href="calc.html"> Calculator </a><li>
+    <li> <a href="calc.htm"> Calculator </a><li>
     <li> <a href="#"> To Do List </a><li>
     <li> <a href="#"> Vindinium </a><li>
     <li> <a href="#"> Big Project </a><li>
@@ -29,13 +29,20 @@ body {
 <div style="text-align: center">
 <h1>Calculator</h1>
 </div>
-
-First Number: <imput type="text" name="First Number"><br>
-Second Number: <input type="text" name="Second Number"><br>
+<div style="text-align: center">
+1st Number: <input type="number" name="1st Number">
 <select id="mySelect">
     <option> </option>
     <option>+</option>
     <option>-</option>
     <option>*</option>
     <option>/</option>
-  </select>
+</select>
+2nd Number: <input type="number" name="2nd Number"><br>
+<button id="calculatorbutton"> Calculate Now</button>
+<script src="calculator.js"></script>
+<div id="answer">
+</div>
+<div>
+<button type="reset" value="Reset">Reset</button>
+</div>
