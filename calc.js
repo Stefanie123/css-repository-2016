@@ -6,39 +6,39 @@ var calculatenowButton = document.getElementById("calculatenowButton");
 var answer = document.getElementById("answer");
 
 calculatenowButton.addEventListener("click", function() {
-    var num1 = varnum1Input.value;
-    var num2 = varnum2Input.value;
-    var answer = varanswer.value;
+    var num1 = num1Input.value;
+    var num2 = num2Input.value;
+    var operation = operationInput.value;
 
-    if (operation.value-- - "+") {
+    if (operation === "+") {
         answer.innerHTML = (num1) + (num2)
     }
 
-    else if (operation.value-- - "+") {
+    else if (operation === "+") {
         answer.innerHTML = (num1) + (num2)
     }
 
-    if (operation.value-- - "-") {
+    if (operation === "-") {
         answer.innerHTML = (num1) - (num2)
     }
 
-    else if (operation.value-- - "-") {
+    else if (operation === "-") {
         answer.innerHTML = (num1) - (num2)
     }
 
-    if (operation.value-- - "*") {
+    if (operation === "*") {
         answer.innerHTML = (num1) * (num2)
     }
 
-    else if (operation.value-- - "*") {
+    else if (operation === "*") {
         answer.innerHTML = (num1) * (num2)
     }
 
-    if (operation.value-- - "/") {
+    if (operation === "/") {
         answer.innerHTML =  (num1) / (num2)
     }
 
-    else if (operation.value-- - "/") {
+    else if (operation === "/") {
         answer.innerHTML =  (num1) / (num2)
     }
 
