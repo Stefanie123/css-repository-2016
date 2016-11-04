@@ -1,4 +1,4 @@
-//Connects the calc.html to the calc.js in order to work.
+//Connects the calc.html to the calc.js in order for the calculator to work.
 var num1Input = document.getElementById("numIinput");
 var operationInput = document.getElementById("operationnput");
 var num2Input = document.getElementById("num2Input");
@@ -14,32 +14,14 @@ calculatenowButton.addEventListener("click", function() {
         answer.innerHTML = (num1) + (num2);
     }
 
-    else if (operation === "+") {
-        answer.innerHTML = (num1) + (num2);
-    }
-
-    if (operation === "-") {
-        answer.innerHTML = (num1) - (num2);
-    }
-
     else if (operation === "-") {
         answer.innerHTML = (num1) - (num2);
-    }
-
-    if (operation === "*") {
-        answer.innerHTML = (num1) * (num2);
     }
 
     else if (operation === "*") {
         answer.innerHTML = (num1) * (num2);
     }
 
-    if (operation === "/") {
-        answer.innerHTML =  (num1) / (num2);
-    }
-
     else if (operation === "/") {
         answer.innerHTML =  (num1) / (num2);
     }
-
-})
