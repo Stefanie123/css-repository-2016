@@ -11,35 +11,35 @@ calculatenowButton.addEventListener("click", function() {
     var operation = operationInput.value;
 
     if (operation === "+") {
-        answer.innerHTML = (num1) + (num2)
+        answer.innerHTML = (num1) + (num2);
     }
 
     else if (operation === "+") {
-        answer.innerHTML = (num1) + (num2)
+        answer.innerHTML = (num1) + (num2);
     }
 
     if (operation === "-") {
-        answer.innerHTML = (num1) - (num2)
+        answer.innerHTML = (num1) - (num2);
     }
 
     else if (operation === "-") {
-        answer.innerHTML = (num1) - (num2)
+        answer.innerHTML = (num1) - (num2);
     }
 
     if (operation === "*") {
-        answer.innerHTML = (num1) * (num2)
+        answer.innerHTML = (num1) * (num2);
     }
 
     else if (operation === "*") {
-        answer.innerHTML = (num1) * (num2)
+        answer.innerHTML = (num1) * (num2);
     }
 
     if (operation === "/") {
-        answer.innerHTML =  (num1) / (num2)
+        answer.innerHTML =  (num1) / (num2);
     }
 
     else if (operation === "/") {
-        answer.innerHTML =  (num1) / (num2)
+        answer.innerHTML =  (num1) / (num2);
     }
 
 })
