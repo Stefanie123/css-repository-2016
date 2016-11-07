@@ -10,5 +10,10 @@ typebutton.addEventListener("click", function (action) {
 });
 
 tasksdiv.addEventListener("click", function(evt){
-    var thing = 
+    var thing = evt.target;
+    thing.parentNode.removeChild(thing);
 });
+
+var color = userinput.value;
+"<divstyle=color: color>" + task + "</div>";
+"<divstyle=color" + color + ""> + task + "</div>";it
