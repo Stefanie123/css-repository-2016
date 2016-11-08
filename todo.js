@@ -14,6 +14,14 @@ tasksdiv.addEventListener("click", function(evt){
     thing.parentNode.removeChild(thing);
 });
 
+if () {
+  
+    }
+
+else () {
+  
+}
+
 var color = userinput.value;
-"<divstyle=color: color>" + task + "</div>";
-"<divstyle=color" + color + ""> + task + "</div>";it
+"<div style = color: color>" + task + "</div>";
+"<div style = color" + color + task + "</div>";it
