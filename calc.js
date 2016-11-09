@@ -41,11 +41,11 @@ calculatenowButton.addEventListener("click", function() {
         answer.innerHTML =  Number(num1) === Number(num2);
     }
     
-    else (operation === "true or false") {
+    if (operation === "true or false") {
         answer.innerHTML = "true";
     }
     
-    else (operation === "true or false") {
+    if (operation === "true or false") {
         answer.innerHTML = "false";
     }
 });
