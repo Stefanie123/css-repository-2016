@@ -16,7 +16,7 @@ calculatenowButton.addEventListener("click", function() {
     // alert(operationInput)
     // alert();
 
-//Condition statements to make different operations work and make actions happen.
+//Condition statements make different operations work and make actions happen.
     if (operation === "+") {
         answer.innerHTML = Number(num1) + Number(num2);
     }
@@ -37,15 +37,15 @@ calculatenowButton.addEventListener("click", function() {
         answer.innerHTML = Number(num1) % Number(num2);
     }
     
-    if (operation === "operation is true or false") {
+    else if (operation === "==") {
         answer.innerHTML =  Number(num1) === Number(num2);
     }
     
-    else (operation === "when operation is true or false") {
+    else (operation === "true or false") {
         answer.innerHTML = "true";
     }
     
-    else (operation === "when operation is true or false") {
-        answer.innerHTML =  "false";
+    else (operation === "true or false") {
+        answer.innerHTML = "false";
     }
 });

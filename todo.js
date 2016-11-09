@@ -4,23 +4,17 @@ var stylingdropdown = document.getElementById("stylingdropdown");
 var typebutton = document.getElementById("typebutton");
 var tasksdiv = document.getElementById("tasksdiv");
 
+//Makes the typebutton work when clicked.
 typebutton.addEventListener("click", function (action) {
   var task = "<br>" + textinput.value + "<br>";
   tasksdiv.innerHTML = tasksdiv.innerHTML + task;
 });
 
+//Makes the text get deleted or disappear when clicked.
 tasksdiv.addEventListener("click", function(evt){
     var thing = evt.target;
     thing.parentNode.removeChild(thing);
 });
-
-if () {
-  
-    }
-
-else () {
-  
-}
 
 var color = userinput.value;
 "<div style = color: color>" + task + "</div>";
