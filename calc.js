@@ -5,6 +5,7 @@ var num2Input = document.getElementById("num2Input");
 var calculatenowButton = document.getElementById("calculatenowButton");
 var answer = document.getElementById("answer");
 
+//Makes the calculatenowButton work when clicked.
 calculatenowButton.addEventListener("click", function() {
     
     // alert();
@@ -15,7 +16,7 @@ calculatenowButton.addEventListener("click", function() {
     // alert(operationInput)
     // alert();
 
-
+//Condition statements to make different operations work and make actions happen.
     if (operation === "+") {
         answer.innerHTML = Number(num1) + Number(num2);
     }
