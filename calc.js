@@ -31,4 +31,13 @@ calculatenowButton.addEventListener("click", function() {
     else if (operation === "/") {
         answer.innerHTML =  Number(num1) / Number(num2);
     }
+    
+      else if (operation === "%") {
+        answer.innerHTML = Number(num1) % Number(num2);
+    }
+
+    else if (operation === "true or false") {
+        answer.innerHTML =  Number(num1)  Number(num2);
+    }
+    
 });
