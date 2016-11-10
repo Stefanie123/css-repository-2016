@@ -4,6 +4,7 @@ var operationInput = document.getElementById("operationnput");
 var num2Input = document.getElementById("num2Input");
 var calculatenowButton = document.getElementById("calculatenowButton");
 var answer = document.getElementById("answer");
+var answer;
 
 //Makes the calculatenowButton work when clicked.
 calculatenowButton.addEventListener("click", function() {
@@ -37,15 +38,8 @@ calculatenowButton.addEventListener("click", function() {
         answer.innerHTML = Number(num1) % Number(num2);
     }
     
-    else if (operation === "==") {
-        answer.innerHTML =  Number(num1) === Number(num2);
+    else if (operation === "^") {
+        answer.innerHTML =  Number(num1) ^ Number(num2);
     }
     
-    if (operation === "true or false") {
-        answer.innerHTML = "true";
-    }
-    
-    if (operation === "true or false") {
-        answer.innerHTML = "false";
-    }
 });
