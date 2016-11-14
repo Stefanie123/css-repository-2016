@@ -19,3 +19,4 @@ tasksdiv.addEventListener("click", function(evt){
 var color = userinput.value;
 "<div style = color: color>" + task + "</div>";
 "<div style = color" + color + task + "</div>";
+tasksdiv.innerHTML += userinput.value
