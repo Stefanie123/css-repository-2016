@@ -3,6 +3,7 @@ var textinput = document.getElementById("textinput");
 var stylingdropdown = document.getElementById("stylingdropdown");
 var typebutton = document.getElementById("typebutton");
 var tasksdiv = document.getElementById("tasksdiv");
+var taskselement = document.getElementById("taskselement");
 
 //Makes the typebutton work when clicked.
 typebutton.addEventListener("click", function (action) {
@@ -16,7 +17,9 @@ tasksdiv.addEventListener("click", function(evt){
     thing.parentNode.removeChild(thing);
 });
 
+//Gives option of changing color of text.
 var color = userinput.value;
 "<div style = color: color>" + task + "</div>";
 "<div style = color" + color + task + "</div>";
-tasksdiv.innerHTML += userinput.value
+tasksdiv.innerHTML += userinput.value;
+taskselement.innerHTML += userinput.value;
