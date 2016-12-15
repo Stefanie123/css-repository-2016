@@ -19,6 +19,6 @@ tasksdiv.addEventListener("click", function(evt){
 
 //Gives option of changing color of text.
 var stylingdropdown=textinput;
-'<div style=color:blue>' +tasksdiv+ "</div>";
-'<div style=color:red>'+tasksdiv+"</div>";
+'<div style=color:color>' +tasksdiv+ "</div>";
+'<div style=color:color>'+tasksdiv+"</div>";
 taskselement.innerHTML=tasksdiv.innerHTML;
