@@ -7,8 +7,14 @@ var taskselement = document.getElementById("taskselement");
 
 //Makes the typebutton work when clicked.
 typebutton.addEventListener("click", function (action) {
-  var task = "<br>" + textinput.value + "<br>";
+  var textcolor = stylingdropdown.value
+  var task = "<br>  <div style='color:"+ textcolor +" '>" + textinput.value + "<br>";
+
   tasksdiv.innerHTML = tasksdiv.innerHTML + task;
+
+  
+  
+  
 });
 
 //Makes the text get deleted or disappear when clicked.
@@ -18,7 +24,7 @@ tasksdiv.addEventListener("click", function(evt){
 });
 
 //Gives option of changing color of text.
-var stylingdropdown = textinput;
-'<div style=color:color>' +tasksdiv+ "</div>";
-'<div style=color:color>'+tasksdiv+"</div>";
-taskselement.innerHTML=tasksdiv.innerHTML;
+// var stylingdropdown = textinput;
+// '<div style=color:color>' +tasksdiv+ "</div>";
+// '<div style=color:color>'+tasksdiv+"</div>";
+// taskselement.innerHTML=tasksdiv.innerHTML;
