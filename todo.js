@@ -17,7 +17,7 @@ typebutton.addEventListener("click", function (action) {
   
 });
 
-//Makes the text get deleted or disappear when clicked.
+//Makes the text erase or disappear when clicked.
 tasksdiv.addEventListener("click", function(evt){
     var thing = evt.target;
     thing.parentNode.removeChild(thing);
