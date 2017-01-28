@@ -1,6 +1,7 @@
 //Connects todo.html to todo.js in order to work.
 var textinput = document.getElementById("textinput");
 var stylingdropdown = document.getElementById("stylingdropdown");
+var stylingdropdown2 = document.getElementById("stylingdropdown2")
 var typebutton = document.getElementById("typebutton");
 var tasksdiv = document.getElementById("tasksdiv");
 var taskselement = document.getElementById("taskselement");
@@ -12,9 +13,8 @@ typebutton.addEventListener("click", function (action) {
 
   tasksdiv.innerHTML = tasksdiv.innerHTML + task;
 
-  
-  
-  
+  var textweight = stylingdropdown2.value
+  var task = "<br>  <div style='thick:"+ textweight +" '>" + textinput.value + "<br>";
 });
 
 //Makes the text erase or disappear when clicked.
