@@ -9,12 +9,11 @@ var taskselement = document.getElementById("taskselement");
 //Makes the typebutton work when clicked.
 typebutton.addEventListener("click", function (action) {
   var textcolor = stylingdropdown.value
-  var task = "<br>  <div style='color:"+ textcolor +" '>" + textinput.value + "<br>";
+  var textweight = stylingdropdown2.value
+  var task = "<br>  <div style='color:"+ textcolor +";  font-weight: " +textweight+ "'>"  + textinput.value + "<br>";
 
   tasksdiv.innerHTML = tasksdiv.innerHTML + task;
 
-  var textweight = stylingdropdown2.value
-  var task = "<br>  <div font='weight:"+ textweight +" '>" + textinput.value + "<br>";
 });
 
 //Makes the text erase or disappear when clicked.
