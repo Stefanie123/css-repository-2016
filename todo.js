@@ -14,7 +14,7 @@ typebutton.addEventListener("click", function (action) {
   tasksdiv.innerHTML = tasksdiv.innerHTML + task;
 
   var textweight = stylingdropdown2.value
-  var task = "<br>  <div style='thick:"+ textweight +" '>" + textinput.value + "<br>";
+  var task = "<br>  <div font='weight:"+ textweight +" '>" + textinput.value + "<br>";
 });
 
 //Makes the text erase or disappear when clicked.
