@@ -58,15 +58,15 @@ The first step I took into creating my bot for the vindinium was by going to vin
 <img src="screenshot25.png" width="40%" height="10%"/>
 <img src="screenshot26.png" width="25%" height="10%"/>
 <br></br>
-    <h3>Code That Describes WHAT To Do</h3>
-Once I got my bot ready, I made a code that described exactly what I want my bot to do. Since one of functions I needed my bot to do was find taverns, I made a variable and conditional statements to describe when I wanted my bot to get to the taverns. I made a variable and named it "var task" and defined in an if statement that I wanted my bot to search for the taverns whenever my bot had a health of greater than 20. I coded it as "if (bot.yourBot.life < 20)". Below that I defined the task as "find nearest taverns". Then, I made an else if statement to say that if my bot's life had a health of more than 50, it would attack the closest player. I also had my bot find the distance to the nearest bot with a low health of lower than 20. I made another task below that statement and set it equal to "attack nearest enemyBot". Afterwards, I made one last statement, an else stantement, that defined in a task that if the health was between 20 an 50, that my bot would search for freemines. Above the variable and conditional statements for what my bot would do, I added a comment that helped me remember what and when the coding they was supposed to be used.
+    <h3>Code That Describes WHAT My Bot Should Do</h3>
+Once I got my bot ready, I made a code that described exactly what I want my bot to do. I needed my bot to find taverns, freemines, and to attack, so I made a variable and conditional statements to describe when I wanted my bot to do these things. I began by making a variable and named it "var task" and defined in an if statement that I wanted my bot to search for the taverns whenever my bot had a health of lower than 20. Going to the taverns, would help my bot to regain health. I coded it as "if (bot.yourBot.life < 20)". Below that I defined the task as "find nearest taverns". Then, I made an else if statement to say that if my bot's life had a health of greater than 50, it would attack the closest player. I also had my bot find the distance to the nearest enemyBot with a low health of below 20. I coded the "attack nearest enemyBot" and "bot.findDistance" with less than 20 health functions together in the same else if statement like this: "else if (bot.yourBot.life > 50 /* && closestPlayer.life */ && bot.findDistance(myPos, [closestPlayer.pos.x, closestPlayer.pos.y]) < 20)". I made another task below that statement and set it equal to "attack nearest enemyBot". Afterwards, I made one last statement, an else statement, that defined in a task that if the health was between 20 and 50, that my bot would search for freemines. Freemines would be the other option in case there were no free mines. Above the variable and conditional statements for what my bot would do, I added a comment that helped me as a reminder of what and when the coding was supposed to be used.
 <br></br>
-<img src="screenshot24.png" width="60%" height="100%"/>
+<img src="screenshot24.png" width="70%" height="100%"/>
 <br></br>
-    <h3>Code That Describes HOW To Do</h3>
-    <li></li>
+    <h3>Code That Describes HOW My Bot Should Function</h3>
+    <li>After getting the code to describe what I want, I made sure that it happened by making a code. So my bot could</li>
     <br></br>
-    <img src="" width="90%" height="10%"/>
+    <img src="screenshot27.png" width="50%" height="100%"/>
     <br></br>
     <h3>Subtitle</h3>
     <li></li>
@@ -83,9 +83,9 @@ Once I got my bot ready, I made a code that described exactly what I want my bot
 <hr style="border-top: dotted 5px;color: deeppink"/>
 </div>
 <div style="text-align: center">
-<h2>Why I Did What I Did</h2>
+<h2>Why I Chose These 3 Functions</h2>
 <body>
-    I decided to make my bot altogether be able to the find nearest taverns, be able to attack the nearest enemyBots, and __________.
+    I decided to make my bot altogether be able to the find the nearest taverns, nearest freemines, and be able to attack the nearest enemyBots, including finding the distance to the closest one with a health of less than 20. One of the biggest functions I needed my bot to have was to be able to find the nearest taverns because if my bot could find and claim taverns, then it would be able to regain any health that it lost from other enemyBots. By retrieving health, the better chance my bot would have at getting to attack enemyBots and gain more gold, which could lead to winning. Another really important function for my bot is being able to attack enemyBots. Being able to fight other bots would allow my bot to get more taverns, mines, and gold.
 <div>
 <hr style="border-top: dotted 5px;color: deeppink"/>
 </div>
