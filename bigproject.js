@@ -65,7 +65,7 @@ for (var i = 0; i < cards.length; i++) {
             card2.element = evt.target;
             card2.id = card2.element.id;
             card2.image = card2.element.src;
-            if (card2.image === card1.image) {
+            if (card2.image === card1.image && card2.element.id !== card1.element.id) {
             }
             else if (card2.image !== card1.image) {
                 setTimeout(function() {
@@ -75,17 +75,18 @@ for (var i = 0; i < cards.length; i++) {
                 }, 1000);
             }
             cardsOpen = 0;
+            
+           
+            //make sure card 1 element is different than "card 2" element
         }
         else if (cardsOpen === 1) {
             card1.element = evt.target;
             card1.id = card1.element.id;
             card1.image = card1.element.src;
-            card1.element!== card2.element;
-            //make sure card 1 element is different than "card 2" element
+           
             
         }
-        //are we on card 1 or 2 and place info for each card into card variables
-        
+
         // if (cardsOpen === 2 && parseInt(evt.target.id) !== parseInt(evt.target.id)) {
         //     evt.target.src = blueCard.png;
         // }
